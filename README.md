@@ -209,7 +209,7 @@ General Notes on Text Preprocessing:
 
 ---
 
-# Extraction methods:
+# 3. Extraction methods:
 
 ## 1. Bag of Words (BoW)
 
@@ -319,7 +319,7 @@ These feature extraction methods represent a progression in NLP, from simple cou
 
 ---
 
-# Different types of language models:
+# 4. Different types of language models:
 
 ## 1. N-gram Models
 
@@ -427,7 +427,7 @@ Neural language models, especially transformer-based models, have revolutionized
 
 ---
 
-# Text classification techniques:
+# 5. Text classification techniques:
 
 ## 1. Naive Bayes
 
@@ -564,7 +564,7 @@ Choice of method often depends on:
 
 ---
 
-# Information retrieval concepts:
+# 6. Information retrieval concepts:
 
 ## 1. Document Ranking
 
@@ -787,7 +787,7 @@ Sentiment analysis and opinion mining are crucial for understanding public opini
 
 ---
 
-# Two major approaches to machine translation:
+# 7. Two major approaches to machine translation:
 
 ## 1. Statistical Machine Translation (SMT)
 
@@ -923,7 +923,7 @@ Most modern machine translation systems use neural approaches, often based on th
 
 ---
 
-# Evaluation metrics for NLP tasks:
+# 8. Evaluation metrics for NLP tasks:
 
 ## 1. BLEU Score (Bilingual Evaluation Understudy)
 
@@ -1054,7 +1054,7 @@ Recent Developments:
 
 ---
 
-# Recent advancements in NLP:
+# 9. Recent advancements in NLP:
 
 ## 1. Transformer Architecture
 
