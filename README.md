@@ -1,3 +1,5 @@
+# NLP Theories and Concepts
+
 1. Fundamental NLP concepts:
    - Tokenization, stemming, and lemmatization
    - Part-of-speech tagging
