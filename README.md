@@ -49,7 +49,9 @@
 
 ---
 
-# 1. Tokenization, Stemming, and Lemmatization
+# Fundamental NLP concepts:
+
+1. Tokenization, Stemming, and Lemmatization
 
 Tokenization:
 - Definition: The process of breaking down text into smaller units called tokens.
