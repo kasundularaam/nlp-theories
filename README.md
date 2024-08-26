@@ -49,9 +49,9 @@
 
 ---
 
-# Fundamental NLP concepts:
+# 1. Fundamental NLP concepts:
 
-1. Tokenization, Stemming, and Lemmatization
+## 1. Tokenization, Stemming, and Lemmatization
 
 Tokenization:
 - Definition: The process of breaking down text into smaller units called tokens.
@@ -70,7 +70,7 @@ Lemmatization:
 - Example: "better" → "good", "running" → "run", "are" → "be"
 - More accurate than stemming but computationally more expensive.
 
-2. Part-of-Speech (POS) Tagging
+## 2. Part-of-Speech (POS) Tagging
 
 - Definition: The process of assigning a grammatical category (e.g., noun, verb, adjective) to each word in a text.
 - Common tags: NN (noun), VB (verb), JJ (adjective), RB (adverb), etc.
@@ -78,7 +78,7 @@ Lemmatization:
   → [("The", DT), ("quick", JJ), ("brown", JJ), ("fox", NN), ("jumps", VBZ), ("over", IN), ("the", DT), ("lazy", JJ), ("dog", NN)]
 - Uses: Disambiguation, information extraction, sentiment analysis.
 
-3. Named Entity Recognition (NER)
+## 3. Named Entity Recognition (NER)
 
 - Definition: Identifying and classifying named entities (proper nouns) in text into predefined categories.
 - Common categories: Person, Organization, Location, Date, Time, Money, etc.
@@ -86,7 +86,7 @@ Lemmatization:
   → [("Apple", ORG), ("U.K.", LOC), ("$1 billion", MONEY)]
 - Uses: Information retrieval, question answering, machine translation.
 
-4. Syntax and Parsing
+## 4. Syntax and Parsing
 
 Syntax:
 - The set of rules, principles, and processes that govern the structure of sentences in a language.
@@ -129,7 +129,7 @@ The   mat
 
 # 2. Text preprocessing techniques:
 
-1. Stop Word Removal
+## 1. Stop Word Removal
 
 Definition: 
 Stop words are common words that generally don't contribute much meaning to a sentence. Removing them can help reduce noise in text data.
@@ -151,7 +151,7 @@ Considerations:
 - May improve performance of some models.
 - Be cautious, as sometimes stop words are important (e.g., in sentiment analysis).
 
-2. Lowercasing
+## 2. Lowercasing
 
 Definition:
 Converting all characters in the text to lowercase.
@@ -211,7 +211,7 @@ General Notes on Text Preprocessing:
 
 # Extraction methods:
 
-1. Bag of Words (BoW)
+## 1. Bag of Words (BoW)
 
 Definition:
 A simple representation that converts text into fixed-length vectors by counting word occurrences, disregarding grammar and word order.
@@ -236,7 +236,7 @@ Cons:
 - Can result in very large, sparse vectors
 - Doesn't capture semantics or context
 
-2. TF-IDF (Term Frequency-Inverse Document Frequency)
+## 2. TF-IDF (Term Frequency-Inverse Document Frequency)
 
 Definition:
 A numerical statistic that reflects the importance of a word in a document within a collection or corpus.
@@ -275,7 +275,7 @@ Cons:
 - Still doesn't capture word order or context
 - Can struggle with out-of-vocabulary words
 
-3. Word Embeddings (e.g., Word2Vec, GloVe)
+## 3. Word Embeddings (e.g., Word2Vec, GloVe)
 
 Definition:
 Dense vector representations of words that capture semantic meanings and relationships.
@@ -321,7 +321,7 @@ These feature extraction methods represent a progression in NLP, from simple cou
 
 # Different types of language models:
 
-1. N-gram Models
+## 1. N-gram Models
 
 Definition:
 N-gram models predict the probability of a word based on the N-1 preceding words.
@@ -345,7 +345,7 @@ Cons:
 - Suffers from data sparsity (many possible n-grams never occur in training data)
 - Large storage requirements for higher n
 
-2. Statistical Language Models
+## 2. Statistical Language Models
 
 Definition:
 These models use statistical techniques to learn probability distributions over sequences of words.
@@ -376,7 +376,7 @@ Cons:
 - Still limited in capturing long-range dependencies
 - Can be computationally expensive for large vocabularies
 
-3. Neural Language Models
+## 3. Neural Language Models
 
 Definition:
 These models use neural networks to learn distributed representations of words and predict probability distributions over sequences.
@@ -429,7 +429,7 @@ Neural language models, especially transformer-based models, have revolutionized
 
 # Text classification techniques:
 
-1. Naive Bayes
+## 1. Naive Bayes
 
 Definition:
 A probabilistic classifier based on Bayes' theorem with a "naive" assumption of independence between features.
@@ -455,7 +455,7 @@ Cons:
 - Independence assumption often doesn't hold in reality
 - May be outperformed by more sophisticated models on complex tasks
 
-2. Support Vector Machines (SVM)
+## 2. Support Vector Machines (SVM)
 
 Definition:
 A discriminative classifier that finds the hyperplane that best separates classes in a high-dimensional space.
@@ -484,7 +484,7 @@ Cons:
 - Can be sensitive to feature scaling
 - May struggle with very large datasets due to training time
 
-3. Deep Learning Approaches
+## 3. Deep Learning Approaches
 
 a) Convolutional Neural Networks (CNNs) for Text
 
@@ -539,7 +539,7 @@ Cons:
 - Computationally intensive to train from scratch
 - Large model size can be challenging for deployment
 
-General Comparison:
+## General Comparison:
 
 1. Naive Bayes:
    - Fast and simple
@@ -566,7 +566,7 @@ Choice of method often depends on:
 
 # Information retrieval concepts:
 
-1. Document Ranking
+## 1. Document Ranking
 
 Definition:
 The process of ordering documents in response to a user query based on their relevance or importance.
@@ -599,7 +599,7 @@ Documents ranked by relevance:
 2. "Introduction to Machine Learning Concepts"
 3. "Data Science and Machine Learning: A Complete Guide"
 
-2. Relevance Scoring
+## 2. Relevance Scoring
 
 Definition:
 The process of assigning a numerical score to a document that quantifies its relevance to a given query.
@@ -628,7 +628,7 @@ Factors Considered:
 - Query term proximity
 - Semantic similarity
 
-3. Precision and Recall
+## 3. Precision and Recall
 
 These are evaluation metrics used to assess the quality of information retrieval systems.
 
@@ -677,9 +677,7 @@ In practice, information retrieval systems aim to optimize these concepts togeth
 
 ---
 
-# Sentiment analysis and opinion mining:
-
-Sentiment Analysis and Opinion Mining
+# 4. Sentiment analysis and opinion mining:
 
 Definition:
 Sentiment analysis and opinion mining are computational techniques used to identify, extract, and quantify affective states and subjective information from text.
@@ -791,7 +789,7 @@ Sentiment analysis and opinion mining are crucial for understanding public opini
 
 # Two major approaches to machine translation:
 
-1. Statistical Machine Translation (SMT)
+## 1. Statistical Machine Translation (SMT)
 
 Definition:
 SMT uses statistical models to learn translations from parallel corpora of source and target language texts.
@@ -837,7 +835,7 @@ Cons:
 - Limited context consideration
 - Struggles with long-range dependencies
 
-2. Neural Machine Translation (NMT)
+## 2. Neural Machine Translation (NMT)
 
 Definition:
 NMT uses neural networks to learn a direct mapping from source to target language.
@@ -927,7 +925,7 @@ Most modern machine translation systems use neural approaches, often based on th
 
 # Evaluation metrics for NLP tasks:
 
-1. BLEU Score (Bilingual Evaluation Understudy)
+## 1. BLEU Score (Bilingual Evaluation Understudy)
 
 Purpose: 
 Primarily used to evaluate the quality of machine-translated text.
@@ -961,7 +959,7 @@ Cons:
 - Favors shorter translations
 - Doesn't handle synonyms or paraphrases well
 
-2. ROUGE Score (Recall-Oriented Understudy for Gisting Evaluation)
+## 2. ROUGE Score (Recall-Oriented Understudy for Gisting Evaluation)
 
 Purpose: 
 Primarily used to evaluate automatic summarization and machine translation.
@@ -994,7 +992,7 @@ Cons:
 - Doesn't capture meaning or importance of words
 - Multiple variants can be confusing
 
-3. Perplexity
+## 3. Perplexity
 
 Purpose: 
 Used to evaluate language models and measure how well a probability model predicts a sample.
@@ -1026,7 +1024,7 @@ Cons:
 - Can be sensitive to vocabulary size and out-of-vocabulary words
 - Lower perplexity doesn't always mean better performance on all tasks
 
-Comparison and Usage:
+## Comparison and Usage:
 
 1. BLEU:
    - Widely used for machine translation
@@ -1058,7 +1056,7 @@ Recent Developments:
 
 # Recent advancements in NLP:
 
-1. Transformer Architecture
+## 1. Transformer Architecture
 
 Definition:
 A neural network architecture that relies entirely on self-attention mechanisms, dispensing with recurrence and convolutions.
@@ -1082,7 +1080,7 @@ Key Variants:
 Impact:
 Transformers have become the foundation for most state-of-the-art NLP models and have been adapted for other domains like computer vision and speech processing.
 
-2. Transfer Learning in NLP
+## 2. Transfer Learning in NLP
 
 Definition:
 The process of pre-training a model on a large dataset for a general task, then fine-tuning it on a smaller dataset for a specific task.
@@ -1103,7 +1101,7 @@ Common Approaches:
 Impact:
 Transfer learning has dramatically improved the state-of-the-art on many NLP benchmarks and enabled high-performance models for low-resource languages and domains.
 
-3. Large Language Models (e.g., BERT, GPT)
+## 3. Large Language Models (e.g., BERT, GPT)
 
 Definition:
 Massive neural networks, typically based on the Transformer architecture, trained on vast amounts of text data.
